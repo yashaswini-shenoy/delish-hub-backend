@@ -15,7 +15,7 @@ router.get(
 );
 
 router.get(
-  "/search/:city",
+  "/search/?:city",
   param("city")
     .isString()
     .trim()
