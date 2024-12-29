@@ -1,4 +1,4 @@
-import mongoose, { InferSchemaType } from "mongoose";
+import mongoose, { InferSchemaType, Mongoose } from "mongoose";
 
 const menuItemSchema = new mongoose.Schema({
   _id: {
@@ -7,6 +7,7 @@ const menuItemSchema = new mongoose.Schema({
     default: () => new mongoose.Types.ObjectId(),
   },
   name: { type: String, required: true },
+  imageUrl: { type: String, required: true },
   price: { type: Number, required: true },
 });
 
