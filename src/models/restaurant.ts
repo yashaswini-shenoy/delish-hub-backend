@@ -1,6 +1,7 @@
 import mongoose, { InferSchemaType, Mongoose } from "mongoose";
 
 // Menu item schema
+
 const menuItemSchema = new mongoose.Schema({
   _id: {
     type: mongoose.Schema.Types.ObjectId,
