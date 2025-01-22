@@ -65,7 +65,6 @@ const stripeWebhookHandler = async (req: Request, res: Response) => {
     order.status = "paid";
     await order.save();
   }
-
   res.status(200).send();
 };
 
